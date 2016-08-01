@@ -167,9 +167,8 @@ header {
 
 header #navbar-bg {
 	background-image: url("../images/sky.jpg");
-	background-size: contain;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
-	display: block;
 	margin-top: 0%;
 	padding-top: 1%;
 	padding-left: 1%;
