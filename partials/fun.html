@@ -1,0 +1,91 @@
+<div class="fun-bg">
+<div ng-include='"templates/navbar.html"'></div>
+<h1>It's All Fun and Games</h1>
+<div class="row">
+	<div class="col-xs-12 col-md-12" id="input">
+	<h3>Tic Tac Toe</h3>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-6 col-md-6" id="input">
+	<p>Enter Xs and Os in the appropriate box</p>
+	<p>A1	B1	C1</p><br> 
+	<input type="text" ng-model="aOne"><input type="text" ng-model="bOne"><input type="text" ng-model="cOne"><br>
+	<p>A2	B2	C2</p> <br>
+	<input type="text" ng-model="aTwo"><input type="text" ng-model="bTwo"><input type="text" ng-model="cTwo"><br>
+	<p>A3	B3	C3</p>
+	<input type="text" ng-model="aThree"><input type="text" ng-model="bThree"><input type="text" ng-model="cThree"><br>
+	</div>
+
+	<div class="col-xs-6 col-md-6" id="output">
+	<table>
+	<tr>
+		<th></th>
+		<th>A</th>
+		<th>B</th>
+		<th>C</th>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>{{aOne}}</td>
+		<td>{{bOne}}</td>
+		<td>{{cOne}}</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>{{aTwo}}</td>
+		<td>{{bTwo}}</td>
+		<td>{{cTwo}}</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>{{aThree}}</td>
+		<td>{{bThree}}</td>
+		<td>{{cThree}}</td>
+	</tr>
+	
+			
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-12 col-md-12">
+	<h3>Tic Tac Toe Round 2</h3>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-6 col-md-6">
+	<p>Hover or click to populate the tic tac toe box</p>
+	</div>
+
+	<div class="col-xs-6 col-md-6">
+	<table>
+	<tr>
+		<th></th>
+		<th>A</th>
+		<th>B</th>
+		<th>C</th>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>{{aOne}}</td>
+		<td>{{bOne}}</td>
+		<td>{{cOne}}</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>{{aTwo}}</td>
+		<td>{{bTwo}}</td>
+		<td>{{cTwo}}</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>{{aThree}}</td>
+		<td>{{bThree}}</td>
+		<td>{{cThree}}</td>
+	</tr>
+	
+			
+	</div>
+</div>
+<div ng-include='"templates/footer.html"'></div>
+</div>

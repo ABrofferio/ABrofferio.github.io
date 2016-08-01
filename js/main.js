@@ -21,6 +21,10 @@ app.config(function($routeProvider) {
 			templateUrl: 'partials/portfolio.html',
 			controller: "portfolioController"
 		})
+		.when('/fun', {
+			templateUrl: 'partials/fun.html',
+			controller: "funController"
+		})
 		.when('/contact', {
 			templateUrl: 'partials/contact.html',
 			controller: 'contactController'
@@ -37,6 +41,9 @@ app.controller('skillsController', function($scope) {
 });
 app.controller('portfolioController', function($scope) {
 	$scope.name = "portfolio";
+});
+app.controller('funController', function($scope) {
+	$scope.name = "fun";
 });
 app.controller('contactController', function($scope) {
 	$scope.name = "contact";
