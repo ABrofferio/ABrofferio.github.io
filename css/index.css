@@ -152,7 +152,7 @@ body{
 }
 
 header {
-	background-image: url("/Users/aja/GitHub/ABrofferio.github.io/images/sky.jpg");
+	background-image: url("../images/sky.jpg");
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin-top: 0%;
@@ -165,8 +165,17 @@ header {
 	display: block;
 }
 
-header #hideme{
-	border-radius: 25px;
+header #navbar-bg {
+	background-image: url("../images/sky.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: block;
+	margin-top: 0%;
+	padding-top: 1%;
+	padding-left: 1%;
+	margin-left: 0%;
+	margin-right: 0%;
+	margin-left: 0%;
 }
 
 body .about-bg {
@@ -175,25 +184,9 @@ body .about-bg {
 body .contact-bg {
 }
 
-body .skills-bg {
-}
-
-body .skills-bg #hideme {
-	display: block:
-	visibility: hidden;
-}
-body .skills-bg .row {
-	text-align: center;
-}
-body .skills-bg .row .col-xs-6{
+body .portfolio-bg .row .col-xs-6{
 	background-color: #ADD8E6;
 	color: white;
-}
-body .skills-bg .row .col-xs-4{
-	background-color: #ADD8E6;
-	color: white;
-}
-body .portfolio-bg {
 }
 
 body .portfolio-bg .row .col-xs-4{
@@ -202,13 +195,27 @@ body .portfolio-bg .row .col-xs-4{
 	color: white;
 }
 
-body .portfolio-bg .row {
-	text-align: center;
+body .portfolio-bg h2{
+	color: #ADD8E6;
 }
 
-body .portfolio-bg #hideme {
-	display: block;
-	visibility: hidden;
+body .portfolio-bg .row {
+	text-align: center;
+	padding-top: 0%;
+	padding-bottom: 1%;
+	padding-left: 1%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+body .portfolio-bg img {
+	text-align: center;
+	padding-bottom: 3%;
+}
+
+body .portfolio-bg #deskapps {
+	background-color: #ADD8E6;
+	background-size: 100% 100%;
+	color: white;
 }
 
 body .fun-bg {
@@ -236,7 +243,7 @@ body .home-bg {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-image: url("/Users/aja/GitHub/ABrofferio.github.io/images/indexback.jpg");
+	background-image: url("../images/indexback.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
