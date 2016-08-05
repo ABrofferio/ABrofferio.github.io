@@ -1,20 +1,29 @@
 <div class="fun-bg">
 <div ng-include='"templates/navbar.html"'></div>
-<h1>It's All Fun and Games</h1>
+<h1>It's All Fun and Games Until...</h1>
 <div class="row">
-	<div class="col-xs-12 col-md-12" id="input">
+	<div class="col-xs-12 col-md-12">
+	<h3>It's Written in the Stars</h3>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-6 col-md-6" id="starLeft">
+	<p>Enter your text below and see it written in the stars</p>
+	<input type="text" ng-model="star">
+	</div>
+	
+	<div class="col-xs-6 col-md-6" id="starRight">
+	<p><br><br>{{star}}<br><br></p>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-12 col-md-12">
 	<h3>Tic Tac Toe</h3>
 	</div>
 </div>
 <div class="row">
-	<div class="col-xs-6 col-md-6" id="input">
-	<p>Enter Xs and Os and watch them populate the game board.</p>
-	<!--<p>A1	B1	C1</p><br> 
-	<input type="text" ng-model="aOne"><input type="text" ng-model="bOne"><input type="text" ng-model="cOne"><br>
-	<p>A2	B2	C2</p> <br>
-	<input type="text" ng-model="aTwo"><input type="text" ng-model="bTwo"><input type="text" ng-model="cTwo"><br>
-	<p>A3	B3	C3</p>
-	<input type="text" ng-model="aThree"><input type="text" ng-model="bThree"><input type="text" ng-model="cThree"><br>-->
+	<div class="col-xs-6 col-md-6" id="tictacGame">
+	<p>Select Xs and Os.</p>
 	<table class="table table-bordered">
 	<tr>
 		<th></th>
@@ -24,94 +33,86 @@
 	</tr>
 	<tr>
 		<td>1</td>
-		<td><input type="text" ng-model="aOne"></td>
-		<td><input type="text" ng-model="bOne"></td>
-		<td><input type="text" ng-model="cOne"></td>
+		<td><select id="aOne" onChange="win()"><option value="noEntry"></option><option value="X">X</option><option value="O">O</option></select></td>
+		<td><select id="bOne" onChange="win()"><option value="noEntry"></option><option value="X">X</option><option value="O">O</option></select></td>
+		<td><select id="cOne" onChange="win()"><option value="noEntry"></option><option value="X">X</option><option value="O">O</option></select></td>
 	</tr>
 	<tr>
 		<td>2</td>
-		<td><input type="text" ng-model="aTwo"></td>
-		<td><input type="text" ng-model="bTwo"></td>
-		<td><input type="text" ng-model="cTwo"></td>
+		<td><select id="aTwo" onChange="win()"><option value="noEntry"></option><option value="X">X</option><option value="O">O</option></select></td>
+		<td><select id="bTwo" onChange="win()"><option value="noEntry"></option><option value="X">X</option><option value="O">O</option></select></td>
+		<td><select id="cTwo" onChange="win()"><option value="noEntry"></option><option value="X">X</option><option value="O">O</option></select></td>
 	</tr>
 	<tr>
 		<td>3</td>
-		<td><input type="text" ng-model="aThree"></td>
-		<td><input type="text" ng-model="bThree"></td>
-		<td><input type="text" ng-model="cThree"></td>
+		<td><select id="aThree" onChange="win()"><option value="noEntry"></option><option value="X">X</option><option value="O">O</option></select></td>
+		<td><select id="bThree" onChange="win()"><option value="noEntry"></option><option value="X">X</option><option value="O">O</option></select></td>
+		<td><select id="cThree" onChange="win()"><option value="noEntry"></option><option value="X">X</option><option value="O">O</option></select></td>
 	</tr>
 	</table>
 	</div>
-
-	<div class="col-xs-6 col-md-6" id="output">
-	<p>Game Board</p>
-	<table class="table table-bordered">
-	<tr>
-		<th></th>
-		<th>A</th>
-		<th>B</th>
-		<th>C</th>
-	</tr>
-	<tr>
-		<td>1</td>
-		<td>{{aOne}}</td>
-		<td>{{bOne}}</td>
-		<td>{{cOne}}</td>
-	</tr>
-	<tr>
-		<td>2</td>
-		<td>{{aTwo}}</td>
-		<td>{{bTwo}}</td>
-		<td>{{cTwo}}</td>
-	</tr>
-	<tr>
-		<td>3</td>
-		<td>{{aThree}}</td>
-		<td>{{bThree}}</td>
-		<td>{{cThree}}</td>
-	</tr>
-	</table>	
+	<div class="col-xs-6 col-md-6" id="tictacVerdict">
+	<p id="declaration"></p>
 	</div>
 </div>
 <!--<div class="row">
 	<div class="col-xs-12 col-md-12">
-	<h3>Tic Tac Toe Round 2</h3>
+	<h3>Geography</h3>
 	</div>
 </div>
 <div class="row">
-	<div class="col-xs-6 col-md-6">
-	<p>Hover or click to populate the tic tac toe box</p>
-	</div>
+	<div class="col-xs-12 col-md-12" id="geographySlide">
+	<p>How well do you know your geography?</p>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-	<div class="col-xs-6 col-md-6">
-	<table>
-	<tr>
-		<th></th>
-		<th>A</th>
-		<th>B</th>
-		<th>C</th>
-	</tr>
-	<tr>
-		<td>1</td>
-		<td>{{aOne}}</td>
-		<td>{{bOne}}</td>
-		<td>{{cOne}}</td>
-	</tr>
-	<tr>
-		<td>2</td>
-		<td>{{aTwo}}</td>
-		<td>{{bTwo}}</td>
-		<td>{{cTwo}}</td>
-	</tr>
-	<tr>
-		<td>3</td>
-		<td>{{aThree}}</td>
-		<td>{{bThree}}</td>
-		<td>{{cThree}}</td>
-	</tr>
-	
-			
-	</div>
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+
+  <div class="carousel-inner" role="listbox">
+        <div class="item active">
+		<div class="carousel-caption">
+		<p>What is the capital of France?</p>
+		</div>
+		<input type="text" name="France">
+        </div>
+
+        <div class="item">
+		<div class="carousel-caption">
+		<p>What is the capital of Spain?</p>
+		</div>
+		<input type="text" name="Spain">
+        </div>
+        
+        <div class="item">
+		<div class="carousel-caption">
+		<p>What is the capital of England?</p>
+		</div>
+		<input type="text" name="England">
+        </div>
+
+        <div class="item">
+		<div class="carousel-caption">
+		<p>What is the capital of Italy?</p>
+		</div>
+		<input type="text" name="Italy">
+        </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>-->
+<script src="./js/fun.js"></script>
 <div ng-include='"templates/footer.html"'></div>
 </div>
