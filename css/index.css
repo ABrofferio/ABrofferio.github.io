@@ -165,14 +165,6 @@ header {
 	display: block;
 }
 
-body .home-bg #navbar-bg #hideme{
-	display: visible;
-}
-
-body .home-bg #navbar-bg #name{
-	display: visible;
-}
-
 #navbar-bg {
 	display: block;
 	margin-top: 0%;
@@ -192,14 +184,6 @@ body .contact-bg {
 
 body .portfolio-bg #navbar-bg{
 	background-color: rgba(255,255,255,0.3);
-}
-
-body .portfolio-bg #navbar-bg #hideme{
-	display: none;
-}
-
-body .portfolio-bg #navbar-bg #name{
-	display: none;
 }
 
 body .portfolio-bg .row .col-xs-6{
@@ -260,13 +244,6 @@ body .fun-bg {
 	margin-bottom: 2%;
 }
 
-body .fun-bg #navbar-bg #hideme{
-	display: none;
-}
-
-body .fun-bg #navbar-bg #name{
-	display: none;
-}
 body .fun-bg .row{
 	text-align: center;
 	padding-left: 1%;
