@@ -48,3 +48,5 @@ app.controller('funController', function($scope) {
 app.controller('contactController', function($scope) {
 	$scope.name = "contact";
 });
+
+var crud = angular.module('crud', ['ngResource']);
