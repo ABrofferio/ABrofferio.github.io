@@ -169,7 +169,7 @@ body .home-bg #navbar-bg #hideme{
 	display: visible;
 }
 
-body .home-bg #navbar-bg #title{
+body .home-bg #navbar-bg #name{
 	display: visible;
 }
 
@@ -198,7 +198,7 @@ body .portfolio-bg #navbar-bg #hideme{
 	display: none;
 }
 
-body .portfolio-bg #navbar-bg #title{
+body .portfolio-bg #navbar-bg #name{
 	display: none;
 }
 
@@ -264,7 +264,7 @@ body .fun-bg #navbar-bg #hideme{
 	display: none;
 }
 
-body .fun-bg #navbar-bg #title{
+body .fun-bg #navbar-bg #name{
 	display: none;
 }
 body .fun-bg .row{
