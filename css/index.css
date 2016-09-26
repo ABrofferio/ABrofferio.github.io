@@ -307,6 +307,10 @@ body .home-bg {
 	background-repeat: no-repeat;
 }
 
+body .home-bg #redirect {
+	text-align: center;
+}
+
 .container-fluid {
 
 }
